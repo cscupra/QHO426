@@ -1,2 +1,1 @@
-print("System Failure Imminent!")
 
