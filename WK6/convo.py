@@ -6,3 +6,4 @@ with open("harry.txt") as h:
 for i in range(len(j_lines)):
     print(f"\033[92mJohn: {j_lines[i]}\033[0m", end = "")
     print(f"\033[93mHarry: {h_lines[i]}\033[0m", end = "")
+  

@@ -1,5 +1,4 @@
 import csv
-
 def reading_csv():
     with open("students.csv") as students:
         csv_reader = csv.reader(students)
