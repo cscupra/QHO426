@@ -1,4 +1,3 @@
-
 import csv
 
 def writing(path):

@@ -1,4 +1,3 @@
-
 #Open file for reading
 f = open("song.txt")
 #Printing a line

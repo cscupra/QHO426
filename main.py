@@ -1,29 +1,17 @@
 import csv
-def reading_csv():
-    with open("students.csv") as students:
-        csv_reader = csv.reader(students)
-        next(csv_reader)
-        total = 0
-        count = 0
-        for row in csv_reader:
-            print(row)
-            total += int(row[2])
-            count+=1
-        print(f"The average mark of Exam 1 was {total/count}")
-  
-  
-def writing_csv():
-    with open("students.csv", "a") as s:
-        csv_writer = csv.writer(s)
-        while True:
-            name = input("Enter name: ")
-            id = input("Enter ID: ")
-            e1 = int(input("Enter Exam 1: "))
-            e2 = int(input("Enter Exam 2: "))
-            csv_writer.writerow([name, id, e1, e2])
-            if input("Shall we stop? (type Y or N): ").upper() == "Y":
-                break
-  
-reading_csv()
-writing_csv()
-reading_csv()
+
+def gather_data(n = 1):
+  with open("eve_data.csv", "w") as file:
+    csv_writer = csv.writer(file)
+    for i in range(n)
+      h = float(input("Enter Height: "))
+      w = float(input("Enter Weight: "))
+      csv_writer.writerow([h, w])
+def retrieve_data():
+    with open("eve_data.csv") as file:
+      csv_reader = csv.reader(file)
+    for row in csv_reader:
+          heights.append(row[0])
+          weights.append(row[1])   
+return heights, weights
+print(retrieve_data())
